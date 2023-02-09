@@ -6,6 +6,8 @@ public class CubeSpawner : MonoBehaviour
 {
     [SerializeField] GameObject cuberefab;
     [SerializeField] Transform spawnPos;
+    [SerializeField] GameObject scriptObject;
+
     public float destroyAfterSeconds = 25f;
 
     private void Start()
@@ -50,12 +52,17 @@ public class CubeSpawner : MonoBehaviour
     /// Spawning cube and changing the string color randomly
     /// </summary>
     /// <param name="alphabet"></param>
-    IEnumerator CubeSpawn(string alphabet)
+   public IEnumerator CubeSpawn(string alphabet)
     {
         GameObject tempCube = Instantiate(cuberefab, spawnPos.position, Quaternion.identity, spawnPos) as GameObject;
 
         CharacterText characterGenerator = tempCube.GetComponent<CharacterText>();
+
+       // InptFieldText inputTextFeld = scriptObject.GetComponent<InptFieldText>();
+        //inputTextFeld.inputText.text = alphabet;
+
         characterGenerator.charaterText.text = alphabet;
+
         characterGenerator.charaterText.color = new Color(Random.Range(0f, 1f), Random.Range(0f, 1f), Random.Range(0f, 1f), 1);
         Debug.Log("Text " + characterGenerator.charaterText.text);
 

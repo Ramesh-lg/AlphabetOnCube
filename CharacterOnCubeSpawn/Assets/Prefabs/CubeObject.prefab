@@ -209,7 +209,7 @@ GameObject:
   - component: {fileID: 7091946550960082838}
   - component: {fileID: 1752245721}
   - component: {fileID: 1752245722}
-  - component: {fileID: 3235786883966786120}
+  - component: {fileID: -3717544895238206559}
   m_Layer: 0
   m_Name: CubeObject
   m_TagString: Untagged
@@ -263,7 +263,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &3235786883966786120
+--- !u!114 &-3717544895238206559
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

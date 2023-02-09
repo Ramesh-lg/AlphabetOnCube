@@ -5,4 +5,5 @@ public class CharacterText : MonoBehaviour
 {
     public TextMeshProUGUI charaterText;
 
+
 }
